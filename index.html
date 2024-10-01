@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anvesh Bhat's personal profile page">
+    <title>Anvesh Bhat - Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --text-color: #ffffff;
+            --background-overlay: rgba(0, 0, 0, 0.5);
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Overlock', cursive;
+            height: 100%;
+        }
+        .container {
+            background-image: linear-gradient(var(--background-overlay), var(--background-overlay)), url('Wireframe - 4.png');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-color);
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .profile-pic {
+            width: 100%;
+            max-width: 206px;
+            margin-bottom: 20px;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 206px;
+            display: block;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        a {
+            color: inherit;
+            text-decoration: underline;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: var(--text-color);
+            color: var(--primary-color);
+        }
+        .social-links {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid var(--text-color);
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .social-links a:hover {
+            background-color: var(--text-color);
+            color: var(--primary-color);
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
+                max-width: 90%;
+            }
+            .profile-pic {
+                max-width: 250px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .profile-pic {
+                max-width: 200px;
+            }
+            .social-links a {
+                font-size: 0.9em;
+                padding: 4px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-pic">
+            <img src="Profile pic.png" alt="Anvesh Bhat">
+        </div>
+        <h1>Anvesh Bhat</h1>
+        <p>Hello, I'm Anvesh. A passionate Product Manager with a keen interest in technology and innovation.</p>
+        <p>Currently, APM at <a href="https://www.onemoney.in/" target="_blank" rel="noopener noreferrer">Onemoney AA</a> | Previously at <a href="https://www.hood.live/" target="_blank" rel="noopener noreferrer">Hood</a></p>
+        <p>When not working, you can find me traveling, cycling, reading, or capturing moments through photography.</p>
+        <div class="social-links">
+            <a href="mailto:me@anveshbhat.in" aria-label="Email Anvesh Bhat">📧 me@anveshbhat.in</a>
+            <a href="https://twitter.com/anvesh_bhat" target="_blank" rel="noopener noreferrer" aria-label="Anvesh Bhat on Twitter">🐦 @anvesh_bhat</a>
+            <a href="https://linkedin.com/in/Anvesh-Bhat" target="_blank" rel="noopener noreferrer" aria-label="Anvesh Bhat on LinkedIn">👔 Anvesh Bhat</a>
+        </div>
+    </div>
+</body>
+</html>
